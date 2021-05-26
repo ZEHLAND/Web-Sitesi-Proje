@@ -1,0 +1,465 @@
+body {
+  background: #D1DBBD;
+  font-family: "Nunito", sans-serif;
+  color: #222;
+}
+
+* {
+  transition: all 0.65s ease;
+  box-sizing: border-box;
+}
+
+
+.menu {
+  margin-top: 10px;
+  width: 100%;
+  padding: 0;
+
+
+}
+.menu ul{
+  margin-left: 50px;
+  padding:0;
+  width: 80%;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.menu ul li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  text-align: center;
+}
+.menu a{
+  width: 120px;
+  text-decoration:none;
+  font-size: 20px;
+  padding: 0;
+  color: white;
+  font-weight: bolder;
+  display: block;
+  background-color: turquoise;
+  border-radius: 5px;
+  background-color: #86C2B4
+}
+.menu a:hover{
+  color: #e9e3e4;
+  box-shadow:#93BFA3;
+
+}
+
+.MaxKutu {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+
+.header {
+  background:#193441;
+  color: white;
+  padding: 0.625em;
+}
+.header .MaxKutu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .site-title,
+.header .site-tagline {
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .header .site-title,
+  .header .site-tagline {
+    width: 100%;
+    text-align: center;
+  }
+  .header .site-title {
+    margin: 0;
+  }
+}
+
+.kontrol{
+  position: absolute;
+  display: none;
+  font-size: 20px;
+  float: right;
+  line-height: 20px;
+  padding: 10px;
+  color: white;
+  margin-right: 20px;
+  cursor: pointer;
+  background-color:#BF4565;
+
+}
+#kontrol{
+  display: none;
+}
+@media(max-width:800px){
+    .kontrol{
+      display: block;
+    }
+    .menu{
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .menu ul{
+      position: absolute;
+      margin-top:40px;
+      margin-left: 0;
+      width: 100%;
+      box-shadow:0 8px 8px 0 rgba(0,0,0,0.5);
+      left:-100%;
+      transition: 0.5s ease;
+    }
+    .menu ul li{
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .menu a{
+      width: 100%;
+      font-size: 15px;
+      line-height: 30px;
+      border-radius: 0;
+      border-bottom: 1px dotted #6C8190;
+    }
+    .menu a:hover{
+      color:#6C8190;
+      box-shadow:0 8px 8px 0 rgba(0,0,0,0.5);
+
+    }
+    #kontrol:checked~ul{
+      left: 0;
+    }
+
+}
+.site-title,
+h1,
+h2,
+h3 {
+  font-family: "Righteous", sans-serif;
+  font-size: 2.625em;
+  color: #112F3B;
+}
+footer h3,h1{
+    color:#F4E9C1;
+}
+
+h3 {
+  font-size: 2em;
+  color:#112F3B;
+}
+
+.site-title {
+  color: white;
+}
+
+.site-tagline {
+  font-size: 1.125em;
+  font-style: italic;
+}
+
+
+
+.full-bleed {
+  margin-top: 10px;
+  background-size: cover;
+  min-height: 300px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+  .full-bleed {
+    min-height: 175px;
+  }
+}
+.cool-photo {
+  background-image: url(https://www.greenpeace.org/static/planet4-turkey-stateless/2019/09/a214c1b1-gp0sttmx9.jpg);
+}
+
+.cool-photo2 {
+  background-image: url(http://lorempixel.com/1300/400/food);
+}
+
+.post {
+  padding: 1.875em;
+}
+
+.sutun {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.sutun .item {
+  padding: 1.5625em;
+  max-width: 47%;
+  background: #86C2B4;
+  color: black;
+  border-bottom: 5px solid #f7ee1a;
+  margin-bottom: 2.1875em;
+  position: relative;
+  overflow: hidden;
+}
+.sutun .item1 {
+  padding: 1.5625em;
+  max-width: 100%;
+  background: #86C2B4;
+  color: black;
+  border-bottom: 5px solid #f7ee1a;
+  margin-bottom: 2.1875em;
+  position: absolute;
+  overflow: hidden;
+}
+
+.sutun .item2 {
+  padding: 1.5625em;
+  max-width: 100%;
+  background: #86C2B4;
+  color: #1a577f;
+  border-bottom: 5px solid #f7ee1a;
+  margin-bottom: 2.1875em;
+  position: center;
+  overflow: hidden;
+  margin-top: 200px;
+  margin-left: 400px;
+}
+
+.sutun .item .item-title {
+  color: black;
+  font-size: 24px;
+  margin: 0 0 5px 0;
+  font-family: "Righteous", sans-serif;
+}
+.sutun .item .item-image {
+  max-width: 100%;
+}
+.sutun .item:hover,
+.sutun .item:focus {
+  background: #e8f4fa;
+  border-bottom-color: #ff6067;
+}
+.sutun .item:hover .medya,
+.sutun .item:focus .medya {
+  position: absolute;
+  bottom: -21px;
+  height: auto;
+  z-index: 5;
+  padding: 10px 0;
+}
+.sutun .item:hover .medya .fa,
+.sutun .item:focus .medya .fa {
+  color: #ff6067;
+  padding: 0 0.3125em;
+}
+.sutun .item:hover .medya .fa:hover,
+.sutun .item:focus .medya .fa:hover {
+  color: #769ab2;
+}
+@media (max-width: 660px) {
+  .sutun .item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+.sutun.thirds .item {
+  max-width: 31%;
+}
+@media (max-width: 770px) {
+  .sutun.thirds .item {
+    max-width: 48%;
+  }
+}
+@media (max-width: 770px) and (max-width: 660px) {
+  .sutun.thirds .item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.sutun .medya {
+  position: absolute;
+  bottom: -60px;
+  height: 0;
+  z-index: -1;
+  font-size: 1.75em;
+}
+
+img{
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.cerceve {
+  margin-left: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  box-sizing:border-box;
+  margin-top: 10px;
+  background-size: cover;
+  min-height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+
+}
+@media (max-width: 700px) {
+  .cerce {
+    min-height: 175px;
+  }
+}
+  .slaytGaleri{
+    position:relative;
+    width: 400%;
+    left: 0;
+    animation: 16s slaytGaleri infinite;
+
+  }
+  .slaytGaleri img{
+    overflow: hidden;
+    float: left;
+    width: 25%;
+  }
+   @keyframes slaytGaleri{
+    0%{left:0%;}
+    20%{left:0%;}
+    25%{left:-100%;}
+    45%{left:-100%;}
+    50%{left:-200%;}
+    70%{left:-200%;}
+    75%{left:-300%;}
+    90%{left:-300%;}
+  }
+.footer {
+  background: black;
+  color: white;
+  padding: 0.9375em;
+  text-align: center;
+  font-size: 0.8125em;
+}
+.footer a {
+  color: #FAE3D6;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+/**
+ * 01/28/2016
+ * This pen is years old, and watching at the code after all
+ * those years made me fall from my chair, so I:
+ * - changed all IDs to classes
+ * - converted all units to pixels and em units
+ * - changed all global elements to classes or children of
+ *   .login
+ * - cleaned the syntax to be more consistent
+ * - added a lot of spaces that I so hard tried to avoid
+ *   a few years ago
+ *   (because it's cool to not use them)
+ * - and probably something else that I can't remember anymore
+ *
+ * I sticked to the same philosophy, meaning:
+ * - the design is almost the same
+ * - only pure HTML and CSS
+ * - no frameworks, preprocessors or resets
+ */
+
+/* 'Open Sans' font from Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: black;
+}
+
+.login-header {
+  background: black;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color:yellow;
+}
+
+.login-container {
+  background: #black;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+  color: black;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background:#FAE3D6;
+  border-color:#3E606F;
+  color: black;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: yellow;
+  color: black;
+}
+
+.login input[type="submit"] {
+  background: black;
+  border-color: transparent;
+  color:yellow;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #3E606F;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #3E606F;
+}

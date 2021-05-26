@@ -1,0 +1,246 @@
+.medya-ikon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.medya-ikon:hover .medya-ikon-patlama {
+  -webkit-animation: background 0.5s ease both;
+  animation: background 0.5s ease both;
+}
+
+.medya-ikon:hover .medya-ikon-şekil-line::before {
+  -webkit-animation: line 1s ease both;
+  animation: line 1s ease both;
+}
+
+.medya-ikon:hover .medya-ikon-shape {
+  -webkit-animation: shapeAnimation 1s ease both;
+  animation: shapeAnimation 1s ease both;
+}
+
+.medya-ikon-patlama {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border-width: 0;
+  border-style: solid;
+  will-change: border-width;
+  border-color: #dee0e0;
+  
+}
+
+.medya-ikon-şekil-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.medya-ikon-şekil-line::before {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  width: 4px;
+  height: 0;
+  left: calc(50% - 2px);
+  border-radius: 2px;
+  will-change: top, height;
+  content: "";
+}
+.medya-ikon-şekil-line:nth-child(1) {
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+.medya-ikon-şekil-line:nth-child(2) {
+  -webkit-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+.medya-ikon-şekil-line:nth-child(3) {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.medya-ikon-şekil-line:nth-child(4) {
+  -webkit-transform: rotate(250deg);
+  transform: rotate(250deg);
+}
+.medya-ikon-şekil-line:nth-child(5) {
+  -webkit-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+.medya-ikon-shape {
+  z-index: 1;
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  fill: #dee0e0;
+  -webkit-transition: fill 0.3s ease;
+  transition: fill 0.3s ease;
+}
+
+/* Twitter */
+.twitter-ikon .medya-ikon-patlama {
+  border-color: #2cc5ef;
+}
+.twitter-ikon .medya-ikon-şekil-line::before {
+  background: #2cc5ef;
+}
+.twitter-ikon:hover .medya-ikon-shape {
+  fill: #2cc5ef;
+}
+
+/* Twitter */
+.facebook-ikon .medya-ikon-patlama {
+  border-color: #3b5998;
+}
+.facebook-ikon .medya-ikon-şekil-line::before {
+  background: #3b5998;
+}
+.facebook-ikon:hover .medya-ikon-shape {
+  fill: #3b5998;
+}
+
+/* Instagram */
+.instagram-ikon .medya-ikon-patlama {
+  border-color: #cd486b;
+}
+.instagram-ikon .medya-ikon-şekil-line::before {
+  background: #cd486b;
+}
+.instagram-ikon:hover .medya-ikon-shape {
+  fill: #cd486b;
+}
+
+/* Snapcline */
+.snapcline-ikon .medya-ikon-patlama {
+  border-color: #edc300;
+}
+.snapcline-ikon .medya-ikon-şekil-line::before {
+  background: #edc300;
+}
+.snapcline-ikon:hover .medya-ikon-shape {
+  fill: #edc300;
+}
+
+@-webkit-keyframes line {
+  0% {
+    top: 30%;
+    height: 0;
+  }
+  40% {
+    opacity: 1;
+    height: 14px;
+  }
+  100% {
+    opacity: 0;
+    top: 10%;
+    height: 0;
+  }
+}
+
+@keyframes line {
+  0% {
+    top: 30%;
+    height: 0;
+  }
+  40% {
+    opacity: 1;
+    height: 14px;
+  }
+  100% {
+    opacity: 0;
+    top: 10%;
+    height: 0;
+  }
+}
+@-webkit-keyframes shapeAnimation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes shapeAnimation {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  20% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  30% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes background {
+  0% {
+    border-width: 40px; /* half ikon width */
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    border-width: 0;
+  }
+}
+@keyframes background {
+  0% {
+    border-width: 40px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  90% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    border-width: 0;
+  }
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
