@@ -1,4 +1,4 @@
 # Web-Sitesi-Proje
 giriş bilgileri
-şifre : 123
+şifre : 1234
 ad: zehra 
